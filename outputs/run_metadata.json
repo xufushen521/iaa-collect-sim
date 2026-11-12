@@ -1,0 +1,16 @@
+{
+  "seed": 20261110,
+  "players_per_cell": 250,
+  "campaign_players": 500,
+  "policies": [
+    "random",
+    "mixed",
+    "lookahead"
+  ],
+  "ad_caps": [
+    0,
+    1,
+    2
+  ],
+  "reference_note": "参考层叠收集、三同消除与失败后激励视频的通用机制；不复制任何游戏 IP、素材、关卡或版式。"
+}

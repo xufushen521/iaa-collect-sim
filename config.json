@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "name": "IAA 七格收集三消｜数值与广告经济",
+    "version": "1.0.0",
+    "reference_note": "参考层叠收集、三同消除与失败后激励视频的通用机制；不复制任何游戏 IP、素材、关卡或版式。",
+    "updated": "2026-11-10"
+  },
+  "rules": {
+    "slot_capacity": 7,
+    "match_count": 3,
+    "overlap_threshold": 0.85,
+    "rescue_remove_count": 3,
+    "rescue_bonus_steps": 2,
+    "max_ads_per_level": 1
+  },
+  "economy": {
+    "starting_coins": 80,
+    "clear_reward_base": 24,
+    "clear_reward_per_step": 1.5,
+    "perfect_clear_bonus": 8,
+    "shuffle_cost": 30,
+    "undo_cost": 18,
+    "ad_coin_reward": 0
+  },
+  "simulation": {
+    "default_policy": "mixed",
+    "ad_accept_probability": 0.72,
+    "shuffle_probability_when_at_risk": 0.35,
+    "mixed_random_probability": 0.65,
+    "max_actions_per_run": 500
+  },
+  "symbol_pool": [
+    {"id": "coffee", "name": "咖啡", "glyph": "☕"},
+    {"id": "cake", "name": "蛋糕", "glyph": "🍰"},
+    {"id": "bread", "name": "面包", "glyph": "🥐"},
+    {"id": "tea", "name": "茶饮", "glyph": "🍵"},
+    {"id": "flower", "name": "花束", "glyph": "🌷"},
+    {"id": "book", "name": "书籍", "glyph": "📚"},
+    {"id": "gift", "name": "礼物", "glyph": "🎁"}
+  ],
+  "levels": [
+    {
+      "id": 1,
+      "name": "晨光拼盘",
+      "tile_count": 27,
+      "symbol_count": 3,
+      "layers": 2,
+      "rows": 6,
+      "cols": 6,
+      "steps": 37,
+      "layer_weights": [0.65, 0.35]
+    },
+    {
+      "id": 2,
+      "name": "午后茶点",
+      "tile_count": 36,
+      "symbol_count": 4,
+      "layers": 2,
+      "rows": 6,
+      "cols": 6,
+      "steps": 46,
+      "layer_weights": [0.6, 0.4]
+    },
+    {
+      "id": 3,
+      "name": "花房小聚",
+      "tile_count": 45,
+      "symbol_count": 5,
+      "layers": 3,
+      "rows": 6,
+      "cols": 6,
+      "steps": 55,
+      "layer_weights": [0.5, 0.32, 0.18]
+    },
+    {
+      "id": 4,
+      "name": "书页迷阵",
+      "tile_count": 54,
+      "symbol_count": 5,
+      "layers": 3,
+      "rows": 7,
+      "cols": 7,
+      "steps": 64,
+      "layer_weights": [0.48, 0.32, 0.2]
+    },
+    {
+      "id": 5,
+      "name": "周末礼盒",
+      "tile_count": 60,
+      "symbol_count": 5,
+      "layers": 3,
+      "rows": 7,
+      "cols": 7,
+      "steps": 70,
+      "layer_weights": [0.46, 0.32, 0.22]
+    },
+    {
+      "id": 6,
+      "name": "晚餐高峰",
+      "tile_count": 66,
+      "symbol_count": 6,
+      "layers": 4,
+      "rows": 7,
+      "cols": 7,
+      "steps": 76,
+      "layer_weights": [0.42, 0.3, 0.2, 0.08]
+    },
+    {
+      "id": 7,
+      "name": "橱窗陈列",
+      "tile_count": 72,
+      "symbol_count": 6,
+      "layers": 4,
+      "rows": 7,
+      "cols": 7,
+      "steps": 82,
+      "layer_weights": [0.4, 0.3, 0.2, 0.1]
+    },
+    {
+      "id": 8,
+      "name": "夜间嘉年华",
+      "tile_count": 75,
+      "symbol_count": 6,
+      "layers": 4,
+      "rows": 8,
+      "cols": 8,
+      "steps": 85,
+      "layer_weights": [0.4, 0.3, 0.2, 0.1]
+    }
+  ],
+  "design_targets": {
+    "clear_rate_note": "首轮用于比较难度与广告救援，不追求复刻极低通关率。",
+    "middle_level_clear_rate": [0.35, 0.7],
+    "ad_watch_conversion_target": [0.45, 0.8],
+    "coin_zero_rate_target_max": 0.1
+  }
+}
